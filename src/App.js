@@ -25,13 +25,13 @@ function App() {
 
   return (
     <div className="App bg-light">
-        <div className = "row justify-content-center">
-          <div className="col-4 p-4">
+        <div>
+          <div>
             { tabs.map((item,i) =>
               <Tab key={i} tab={item} index={i} setIndex={setIndex}></Tab>
             )}
-            <div className="border border-dark m-4">
-              <p classname="text-left px-2 py-1">{tabs[index].content}</p>
+            <div>
+              <p>{tabs[index].content}</p>
             </div>
           </div>
         </div>
